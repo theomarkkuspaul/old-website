@@ -1,0 +1,38 @@
+
+body {
+  background-color:#E86E5D;
+}
+
+hr {
+  position: relative;
+}
+header {
+  text-align: center;
+}
+
+div {
+  border: 2px solid black;
+  display: inline-block;
+}
+
+.New {
+  height: 300px;
+  width: 400px;
+  padding: 1em;
+  margin: 0em 0.5em 0.5em 0.5em;
+}
+
+.Contact {
+  height: 150px;
+  width: 200px;
+  padding: 0em 0em 1em 1em;
+}
+
+.profile_picture {
+  height: 150px;
+  width: 200px;
+  border: 2px dashed purple;
+  margin-top: 190px;
+  margin-left: -220px;
+  position: absolute;
+}
