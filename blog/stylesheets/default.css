@@ -26,6 +26,8 @@ div {
   height: 150px;
   width: 200px;
   padding: 0em 0em 1em 1em;
+  margin-top: -0.5em;
+
 }
 
 .profile_picture {

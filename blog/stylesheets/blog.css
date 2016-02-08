@@ -1,0 +1,22 @@
+body {
+  background-color:#88BBE8;
+}
+
+title {
+  text-align: center;
+}
+h1 {
+  text-align: center;
+}
+
+div {
+  border: 2px solid black;
+  padding: 0.5em;
+  margin: 1em;
+  background-color: red;
+}
+
+div div {
+  background-color: white;
+  padding: 1em;
+}
