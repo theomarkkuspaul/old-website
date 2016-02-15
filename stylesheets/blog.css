@@ -24,3 +24,10 @@ div div {
 h4 {
   font-style: italic;
 }
+
+code {
+  background-color: white;
+  padding: 1em;
+  border: 1px solid black;
+  display: inline-block;
+}
