@@ -9,14 +9,18 @@ header {
   text-align: center;
 }
 
-div {
+ul {
+  list-style-type: none;
+}
+
+section {
   border: 2px solid black;
-  padding: 0.5em;
+  padding: 1em;
   margin: 1em;
   background-color: red;
 }
 
-div div {
+section div {
   background-color: white;
   padding: 1em;
 }
@@ -30,4 +34,22 @@ code {
   padding: 1em;
   border: 1px solid black;
   display: inline-block;
+}
+
+.line {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.faint {
+  width: 90%;
+  border: 1px solid #808080;
+  margin-left: 5%;
+}
+p {
+  font-size: 1.1em;
+}
+
+a:hover {
+  color: red;
 }
