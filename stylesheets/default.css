@@ -1,10 +1,32 @@
-
+@font-face {
+  font-family: open_sans;
+  src: url('open-sans/OpenSans-Regular.ttf');
+}
 body {
   background-color:#E86E5D;
+  font-family: open_sans, Verdana;
 }
 
-hr {
-  position: relative;
+
+p {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.symbol {
+  height: 50px;
+  width: 50px;
+  margin: 1em;
+}
+
+.line {
+  width: 100%;
+  border: 1px solid black;
+}
+
+ul {
+  list-style-type: none;
+  display: inline-block;
 }
 
 h4  {
@@ -14,9 +36,10 @@ header {
   text-align: center;
 }
 
-div {
+section {
   border: 2px solid black;
   display: inline-block;
+  font-family: open_sans;
 }
 
 .New {
@@ -30,7 +53,6 @@ div {
   height: 150px;
   width: 200px;
   padding: 0em 0em 1em 1em;
-
   display: inline-block;
 
 }
@@ -42,4 +64,18 @@ div {
   margin-top: 190px;
   margin-left: -220px;
   position: absolute;
+}
+
+footer {
+  text-align: center;
+}
+
+.button {
+  width: 100px;
+  color: black;
+  background-color: #e6aa17;
+  display: block;
+  border-radius: 4px;
+  text-align: center;
+  padding: 1em;
 }
