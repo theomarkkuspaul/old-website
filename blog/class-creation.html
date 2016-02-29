@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Creating Classes</title>
+    <link  rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  </head>
+
+  <body>
+
+  <header>
+    <h1>Creating A Brand New Class</h1>
+
+    <h4>26/2/2016</h4>
+  </header>
+
+  <div class="line"></div>
+
+  <h4>What is a class?</h4>
+  <p></p>
+
+  <h4>Let's Create A New Class</h4>
+
+  <p>Let's take a glass of water for example. When you are thirsty you might reach into your cupboard and grab a glass, stick it under a tap, turn the tap on and watch as the glass fills up to the point of nearly overflowing. You take a big sip and the water level goes down. You finish the rest and decide to have another one, so the water level climbs back up once again to the brim. You might decide mid-glass that you are still thirsty but may not have enough bladder space to facilitate another full one. At that point the cup is half full but you fill up. The water level rises again. This model can be brought to life through Ruby classes and instance variables.
+</p>
+
+  <p>We are going to create a new <code>class</code> To do this, simply type in <code>class</code> followed by a name. The class name can be used to access everything contained within that class. You probably want to give it a name which is relevant to the sort of situation you are in. We are dealing with a glass of water here, so you probably don't want to name your class "Purple Lizards" or something anomalous like that.</p>
+
+  <p>Remember that you must capitalise the first letter of the class name. Every subsequent word must have either a capitalised first letter or have an underscore before it. Of course, you must close the class using an <code>end</code></p>
+
+  <p>For example:<br>
+    <code>class Glass<br><br>
+      end
+    </code>
+  </p>
+
+  <p>Now we will start creating methods inside this class. Methods in ruby are snippets of code which perform a specific action. In a class we can create our own set of methods. In a sense a class is a sort of container for methods.</p>
+  <p>First of all we will give this class an initialize method which is how we create an instance of this class. Think of this as us booting up the class in similar fashion to how you might spark the ignition of a car or turn on a computer.
+
+<p><code>class Glass<br>
+  def initialise(water_level)<br>
+    @water_level = water_level<br>
+  end<br>
+end </code></p>
+
+  <p>We feed it an argument -- contained within the parenthesis. This will be what we will input into our class when we initialise the class. When we feed our class an argument, that argument can only be used within the method that it was assigned. What can we do to get around this? We set it equal to an instance variable. An instance variable is very useful since we are able to call this anywhere within the class and it will return the information we desire.</p>
+
+  <p>I am now going to create a new instance of the class we have made. The number I input as the argument is the maximum amount of water the glass can contain, in millimetres.</p>
+
+  <p><code>glass_of_water = Glass.new(500)</code></p>
+
+  <p>We now have created a glass which can hold water. But how can we drink it? We have forgotten to add a method that allows us to take a sip. We must define a new method that removes water from the cup and one that can fill it.</p>
+
+  <p><code>
+class Glass<br>
+<br>
+  attr_reader :water_level<br>
+<br>
+  def initialise(maximum_level)<br>
+    @maximium_level = maximum_level<br>
+    @water_level = 0<br>
+  end <br>
+
+  def fill<br>
+    @water_level = @maximum_level<br>
+  end<br>
+<br>
+  def take_sip<br>
+    @water_level = @water_level - 100<br>
+    p "Refreshing"<br>
+  end<br>
+end
+  </code></p>
+
+  <p><code>glass_of_water.fill # This method fills the glass<br>
+glass_of_water.take_sip # Hydrate!<br>
+p glass_of_water.water_level</code></p>
+
+  <p>If we allow an average sip to be roughly 100ml we can manipulate instance variable values within a class to serve our purpose: to remove quantity from our cup. For our example we take a sip and it takes 100 away from the instance variable @water_level. If you notice just below where I have called the class there is a single line of code. This is called an attribute reader. What this does is allows me to return the value of the @water_level instance variable without me having to create a whole new method. In short, this summarises three lines of code into one. Note that I have used a 'p' method before it, since I did not create a method in which I could display text to the user I have to make sure I do this now.</p>
+
+  <p>And there we go. Hopefully you have learnt a little about classes, the general setup, how information can be transferred between methods in the same class, why you would use a class to house several methods, et cetera. Cheers!</p>
+
+  <p>fin.</p>
+ <div class="line"></div>
+    <footer>
+      <h4>Contact me!</h4>
+    <ul>
+      <li><a href="mailto:theo.markkus.paul@gmail.com">Email</a></li>
+    </ul>
+  </footer>
+
+
+  </body>
+</html>
