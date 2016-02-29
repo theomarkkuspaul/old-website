@@ -1,6 +1,6 @@
 @font-face {
   font-family: open_sans;
-  src: url('open-sans/OpenSans-Regular.ttf');
+  src: url('../open-sans/OpenSans-Regular.ttf');
 }
 body {
   background-color:#E86E5D;
@@ -78,4 +78,13 @@ footer {
   border-radius: 4px;
   text-align: center;
   padding: 1em;
+}
+
+.artists {
+  width: 80%;
+  text-align: center;
+}
+
+.artists li{
+  display: inline-block;
 }
