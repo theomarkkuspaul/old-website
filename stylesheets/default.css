@@ -29,6 +29,8 @@ ul {
   display: inline-block;
 }
 
+
+
 h4  {
   text-decoration: underline;
 }
@@ -40,6 +42,30 @@ section {
   border: 2px solid black;
   display: inline-block;
   font-family: open_sans;
+}
+
+.content {
+  width: 80%;
+  border: 2px solid white;
+  margin: 10px 10% 10px 10%;
+  height: 150px;
+  font-size: 0.35em;
+}
+
+.content img {
+  float: left;
+  border: 1px solid black;
+  height: 90px;
+  width: 90px;
+  margin: 30px 30px 10px 20px;
+}
+
+.content p {
+  display: inline;
+
+}
+.content h4 {
+  margin-left: 5%;
 }
 
 .New {

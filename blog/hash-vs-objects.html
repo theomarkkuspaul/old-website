@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title></title>
+    <link  rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  </head>
+
+  <body>
+
+  <header>
+    <h1>The Same But Completely Different...</h1>
+  </header>
+<div class="line"></div>
+
+<main>
+  <p>I'll admit it, there is not a whole lot of difference between Objects in JavaScript and Hashes in Ruby. Maybe change a few words here, change a bit of the syntax there, a big generalisation would be that they are exactly the same thing. It is true that they act very similarly in that they both store values which can be accessed by using a label.</p>
+
+  <h4>Let's see what we know about the two:</h4>
+
+  <p>JavaScript Objects could be created a little something like this:</p>
+  <code>var ball = {colour : "blue", size : "large", weight : 200g}</code>
+
+  <p>Ruby is practically the same, except for that rascal 'var' declarative</p>
+  <code>ball = {colour : "blue", size : "large", weight : 200g}</code>
+
+  <p>They are very close to being the exact same syntax right?</p>
+
+  <p>One difference is that in Ruby each label that appears before the colon is called a 'key' whereas these are called 'properties' in JS. It is hard to pin down an exact reason why they have different names. Perhaps it has something to do with the fact that label values can be accessed differently.</p>
+
+  <h4>To access a key's value in Ruby:</h4>
+  <code>ball[:colour] => "blue"</code>
+
+  <h4>Whereas in JS, you have two different notations: dot and bracket.</h4>
+  <code>
+    ball.colour => "blue"<br><br>
+    ball["colour"] => "blue"
+  </code>
+
+  <p>One thing to note is that you can only set a property as a string in JAva Script. In Ruby you might set a key as a string, integer, array, or even another hash, et cetera. JavaScript has a stricter convention.</p>
+
+  <h4>The complexity of Ruby</h4>
+  <code>hash = {[1,2,3,"hello"] => "hash value", {"number" : 4} => 3, "Another string to complicated things further"}</code>
+
+  <p>Hashes can get pretty crazy in Ruby if you don't watch yourself</p>
+
+  <h4>His opponent: JavaScript</h4>
+  <code>object = {vase : "flowers", fingers : 10}</code>
+
+  <p>Ok... I lied earlier, so maybe there is ONE significant difference.</p>
+
+  <p>
+    Since I'm on a role another thing to note is in JavaScript you are able to set a function as a property value. In Ruby you cannot set a value of a key to a method. Take a look at this example:
+  </p>
+
+  <code>hash = {key: def add(num1,num2)}</code>
+
+  <p>If you were to complete the rest of that method, you would run into all sorts of errors.</p>
+
+  <p>In JS however you are able to pull this of.</p>
+
+  <code>object = {add : function() {
+    <br>console.log(1 + 2 + 3)
+    <br>}
+  </code>
+
+  <p>And this is actually a feasible way of storing data, especially if you pump in parameters. You can do a lot with this. If you need to archive the output of a calculation and call upon this output in another function, objects are very good at facilitating this. </p>
+</main>
+
+  <p>fin.</p>
+<div class="line"></div>
+    <footer>
+      <h4>Contact me!</h4>
+    <ul>
+      <li><a href="mailto:theo.markkus.paul@gmail.com">Email</a></li>
+    </ul>
+  </footer>
+
+
+  </body>
+</html>
