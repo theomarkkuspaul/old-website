@@ -29,7 +29,9 @@ ul {
   display: inline-block;
 }
 
-
+h5 {
+  text-decoration: strong;
+}
 
 h4  {
   text-decoration: underline;
@@ -113,4 +115,27 @@ footer {
 
 .artists li{
   display: inline-block;
+}
+
+.loop h4{
+  margin: 5px 0px 0px 5px;
+}
+
+.loop p{
+  margin-left: 5px;
+}
+
+.loop{
+  border: 0px;
+
+}
+
+.loop img{
+  text-align: center;
+  display: block;
+  margin-bottom: 5px;
+}
+
+main {
+  padding-left: 10px;
 }
