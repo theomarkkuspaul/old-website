@@ -11,6 +11,7 @@ body {
 p {
   display: inline-block;
   text-decoration: none;
+  font-family: open_sans;
 }
 
 .symbol {

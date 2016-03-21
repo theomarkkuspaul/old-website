@@ -20,20 +20,37 @@ ul {
   list-style-type: none;
 }
 
+.content{
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  margin-left: 150px;
+  margin-right: 150px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
 section {
   border: 2px solid black;
   padding: 1em;
   margin: 1em;
-  background-color: red;
+  background-color: #5F82A2;
+  width: 300px;
+  margin-left: 18.5%;
+  margin-right: 18.5%;
 }
 
-section div {
-  background-color: white;
+.inner{
+  background-color: #DBEAF8;
   padding: 1em;
+  text-align: center;
 }
 
 h4 {
   font-style: italic;
+}
+
+.title{
+  text-align: center;
 }
 
 code {
