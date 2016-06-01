@@ -183,8 +183,13 @@ hr.small {
     padding: 50px 0;
 }
 
-.service-item {
+.skills-item {
     margin-bottom: 30px;
+}
+
+.skill-logo {
+  width: 120px;
+  height: 115px;
 }
 
 /* Callout */
