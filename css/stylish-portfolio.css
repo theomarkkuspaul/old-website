@@ -8,19 +8,26 @@ body {
 
 .icon {
   color: #F7D945;
+  vertical-align: middle;
 }
 
 body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.contact-me-link {
+  color: white;
+}
 .text-vertical-center {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
     color: #F7D945;
 }
-
+.large-text {
+  padding-top: 10px;
+  font-size: 1.5em;
+}
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
