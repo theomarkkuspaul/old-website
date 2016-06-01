@@ -28,6 +28,9 @@ body {
   padding-top: 10px;
   font-size: 1.5em;
 }
+.med-text {
+  font-size: 16px;
+}
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
